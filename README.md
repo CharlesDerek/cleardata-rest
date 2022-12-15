@@ -39,16 +39,4 @@ Deployment into AWS:
   - CodeDeploy to deploy an automation process by deploying code to Amazon EC2 instances, on-premises instances, or serverless Lambda functions.
   - CodePipeline to automate the continuous delivery process to define a CI/CD (continuous integration and continuous delivery) pipeline that automates the build, test, and deployment of the microservice.
 
-Differnent time complexities:
-  - O(n): is a linear time complexity, meaning that its performance is directly proportional to the size of the input. It means that the time taken to complete a task increases linearly with the input size.
-  - O(n2): is a quadratic time complexity, meaning that its performance is directly proportional to the square of the size of the input. It means that the time taken to complete a task increases exponentially with the input size.
-  - O(log n): Logarithmic time complexity, meaning that its performance increases at a logarithmic rate with the increase in input size.
-  - O(1): Constant time complexity, meaning that its performance does not depend on the size of the input and is always the same no matter the size.
-  - O(n log n): Linearithmic time complexity, meaning that its performance is directly proportional to the product of the input size and the logarithm of the input size.
-  - O(2n): Exponential time complexity, meaning that its performance increases exponentially with the increase in input size.
 
-aws team
-
-TESTTT
-aws
-send finished
