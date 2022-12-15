@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Letter Checker API Service</title>
+  </head>
+  <body>
+    <h1>
+      Letter Checker API Service
+    </h1>
+    <p>This API service provides a way to check if a given string contains every
+      letter of the alphabet at least once.
+    </p>
+    <h3>Endpoints</h3>
+    <p>This API consists of one endpoint:</p>
+    <ul>
+      <li>
+        <b>/v1/get/{stringVal}/</b>
+        - This endpoint takes a string value as an argument and returns true if the
+        string contains every letter of the alphabet at least once and false if not.
+      </li>
+    </ul>
+    <h3>Examples</h3>
+    <p>To check if a string contains every letter of the alphabet at least once,
+      make a GET request to the endpoint with the string as the argument:</p>
+    <pre>get /v1/get/abcdabcd1234/</pre>
+    <p>The API will return a JSON response with the result:</p>
+    <pre>
+      {
+        "result": false
+      }
+    </pre>
+  </body>
+</html>
