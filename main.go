@@ -2,9 +2,11 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/gorilla/mux"
+	"fmt"
 	"net/http"
 	"unicode"
+
+	"github.com/gorilla/mux"
 )
 
 func main() {
@@ -29,9 +31,11 @@ func getString(w http.ResponseWriter, r *http.Request) {
 	result := containsAllLetters(stringVal)
 
 	// Marshal JSON object to string
-	resultJSON, err := json.Marshal(result)
+	resultJSON, err := json.Marshal(map[string]bool{"result": result})
 	if err != nil {
 		panic("Failed to marshal JSON object")
+
+		fmt.Println(resultJSON)
 	}
 
 	// Write result json to response writer
@@ -51,7 +55,7 @@ func containsAllLetters(s string) bool {
 	lettersSeen := make(map[rune]bool)
 
 	containsOneOfEachLetter := false
-	
+
 	// Iterate/traverse over each character.
 	for _, c := range s {
 
@@ -68,6 +72,6 @@ func containsAllLetters(s string) bool {
 		// All letters present.
 		containsOneOfEachLetter = true
 	}
-	
+
 	return containsOneOfEachLetter
 }

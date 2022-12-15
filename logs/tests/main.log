@@ -1,0 +1,8 @@
+=== RUN   TestMain
+=== RUN   TestMain/String_contains_all_letters
+=== RUN   TestMain/String_does_not_contain_all_letters
+--- PASS: TestMain (0.00s)
+    --- PASS: TestMain/String_contains_all_letters (0.00s)
+    --- PASS: TestMain/String_does_not_contain_all_letters (0.00s)
+PASS
+ok  	dev.mrgi-portal.com	0.149s
