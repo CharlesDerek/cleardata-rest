@@ -1,16 +1,16 @@
 # Problem Statement:
 ## You will receive a string as input, potentially a mixture of upper and lower case, numbers, special characters etc. The task is to determine if the string contains at least one of each letter of the alphabet. Return true if all are found and false if not. Write it as a RESTful web service (no authentication necessary) in any language/framework you choose and document the service. Please describe how you would deploy this application into AWS, including which AWS services you would use, and what deployment method or tools.
 
-I. a) What were alternatives for building an api in Golang, and b) why did i choose Mux over them?:
- a) Other popular alternatives to Mux for building REST APIs in Golang are Gin, Echo, Gorilla/Mux, and net/http.
- b) 
-  - Mux is a better choice because it's lightweight and extremely fast.
-  - It offers many features such as URL routing, URL parameters, middleware support, and a clean syntax.
-  - Additionally, it provides great flexibility when it comes to customizing the API endpoints.
-  - The code is also well-documented, making it easier to maintain.
+I. What were alternatives for building an api in Golang, and why did i choose Mux over them?:
+  a) Other popular alternatives to Mux for building REST APIs in Golang are Gin, Echo, Gorilla/Mux, and net/http.
+  b) 
+    - Mux is a better choice because it's lightweight and extremely fast.
+    - It offers many features such as URL routing, URL parameters, middleware support, and a clean syntax.
+    - Additionally, it provides great flexibility when it comes to customizing the API endpoints.
+    - The code is also well-documented, making it easier to maintain.
 
 II. Why Go over Python for this specific task?:
- a) I chose Go for building the REST API instead of Python because Go provides excellent performance and scalability long-term. Go is also a great language for developing microservices and distributed systems, which makes it a great choice for writing REST APIs. Additionally, Go is known for its concurrency support, which makes it ideal for building applications that require high throughput. Finally, Go is easy to apply this concept in a scalable approach and has a concise syntax, which makes it easier to develop, read and maintain as a micro-service.
+  I chose Go for building the REST API instead of Python because Go provides excellent performance and scalability long-term. Go is also a great language for developing microservices and distributed systems, which makes it a great choice for writing REST APIs. Additionally, Go is known for its concurrency support, which makes it ideal for building applications that require high throughput. Finally, Go is easy to apply this concept in a scalable approach and has a concise syntax, which makes it easier to develop, read and maintain as a micro-service.
 
 III. Go (mux) vs Python (Flask & Django):
   Golang is a great language to use when building a web service because it is fast, lightweight, and has a simple syntax. It is also well suited to concurrent programming tasks, making it ideal for high-performance web applications. Additionally, Golang has excellent support for the RESTful web service architecture, allowing for easy development of services that adhere to the RESTful principles.
